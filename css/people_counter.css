@@ -1,0 +1,48 @@
+h1 {
+    font-size: 80px;
+    margin-top: 0;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+h2 {
+    font-size: 50px;
+    margin-top: 0;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+button {
+    border: none;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: white;
+    font-weight: bold;
+    width: 200px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+}
+
+#increment-btn {
+    background: darkred;
+    text-align: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#save-btn {
+    background: green;
+    text-align: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#reset-btn {
+    background: orange;
+    text-align: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}

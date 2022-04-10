@@ -1,21 +1,113 @@
-<html>
+<!DOCTYPE html lang="en-US">
 	<head>
+		<meta charset="UTF-8">
+		<meta name="description" content="This page contains all the things I am learning how to create as I learn HTML" >
 		<title>The Random Site</title>
+		<link rel="stylesheet" href="css/main.css" type="text/css">
 	</head>
 	<body>
-		<h1>Random Site</h1>
-		<h2>Where complete randomness reigns supreme!</h2>
-		<p>
-		Hello, randomites, and welcome to my domain of random shit. Come for the chaos, stay for the awesomness!
-		</p>
-		
-		<img src="images/discord.gif" alt="picture of Discord from My Little Pony: Friendship is Magic">
-		
-		<h2>Fun Stuff</h2>
-		<ul>
-			<li><a href="https://www.investopedia.com/">Investopedia</a></li>
-			<li><a href="https://www.youtube.com/">Youtube</a></li>
-			<li><a href="https://www.twitch.tv/">Twitch</a></li>		
-		</ul>
+		<header>
+			<h1>Random Site</h1>
+			<h2>Where complete randomness reigns supreme!</h2>
+
+			<nav aria-label="primary-navigation">
+				<ul>
+					<li>
+						<a href="#fun-links">Fun Links</a>
+						<a href="about.html">About Me</a>
+					</li>
+				</ul>
+			</nav>
+		</header>
+		<main>
+			<p>
+				Hello, randomites, and welcome to my domain of random shit. Come for the chaos, stay for the awesomness!
+			</p>
+			
+			<a href="https://mylittlepony.hasbro.com/en-us"><img src="images/discord.gif" alt="picture of Discord from My Little Pony: Friendship is Magic"></a>
+			
+			
+			<hr>
+			<section id="fun-links"></div>
+				<h2>Fun Stuff</h2>					
+					<dl>
+						<dt><a href="https://www.investopedia.com/">Investopedia</a></dt>
+						<dd>An investing education website</dd>
+						<dt><a href="https://www.youtube.com/">Youtube</a></dt>
+						<dd>Video streaming site</dd>
+						<dt><a href="https://www.twitch.tv/">Twitch</a></dt>
+						<dd>Another video streaming site</dd>		
+					</dl>
+			</section>
+			<section id="other-links"></div>
+				<h2>Other Links</h2>					
+					<dl>
+						<dt><a href="people_counter.html">People Counter</a></dt>
+						<dd>Counts people</dd>
+								
+					</dl>
+			</section>		
+			<hr>
+			<article id="contact">
+				<h2>Contact Me</h2>
+				<p>I'd really like to hear from you!</p>
+
+				<form action="https://httpbin.org/get" method="get">
+					<p>
+						<label for="firstName">First Name:</label>
+						<input type="text" name="firstName" id="firstName" placeholder="Jane" autocomplete="on" required>
+					</p>
+					<p>
+						<label for="lastName">Last Name:</label>
+						<input type="text" name="lastName" id="lastName" placeholder="Doe" autocomplete="on" required>
+					</p>
+					<p>
+						<label for="password">Password:</label>
+						<input type="password" name="password" id="password" placeholder="your secret" required>
+					</p>
+					<p>
+						<label for="phone">Phone:</label>
+						<input type="tel" name="phone" id="phone" placeholder="5555555555" pattern="[0-9]{3}[0-9]{3}[0-9]{4}" required>
+					</p>
+					<p>
+						<label for="decade">Favorite Decade:</label>
+						<input type="number" name="decade" id="decade" placeholder="5555555555" min="1950" max="2020" step="10" value="1980" required>
+					</p>
+					<p>
+						<label for="coffee">Favorite Coffee:</label>
+						<select name="coffee" id="coffee" multiple size="5">
+							<optgroup label="Coffees">
+								<option value="regular coffee">Regular Coffee</option>
+								<option value="iced coffee">Iced Coffee</option>
+							</optgroup>
+							<optgroup label="Espresso Drinks">
+								<option value="latte" selected="true">Latte</option>
+								<option value="cappuccino">Cappuccino</option>
+								<option value="cortado">Cortado</option>
+								<option value="americano">Americano</option>
+							</optgroup>
+							<option value="other">Other</option>
+						</optgroup>
+						</select>
+					</p>
+					<!-- <p>
+						<label for="coffee">Favorite Coffee:</label>
+						<input type="text" name="coffee" id="coffee" list="coffee-list">
+						<datalist id="coffee-list">
+							<option value="coffee">
+							<option value="latte">
+							<option value="espresso">
+							<option value="cortado">
+							<option value="americano">
+							<option value="other">
+						</datalist>
+					</p> -->
+				</form>
+			</article>
+		</main>
+		<footer>
+			<p>&copy; <a href="about.html">Kristen Gallien</a></p>
+			<p><a href="#">Back to Top</a></p>
+		</footer>
 	</body>
 </html>
