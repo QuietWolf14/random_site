@@ -1,9 +1,0 @@
-version: '3'
-services:
-    web:
-        image: random-site
-        build: .
-        container_name: random-site-static
-        restart: always
-        ports:
-            - "80:80"
